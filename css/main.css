@@ -3841,3 +3841,26 @@ dl.accordion.time-line:before {
       margin-top: 0px !important; } }
 
 /*# sourceMappingURL=main.css.map */
+
+
+
+/* 以下、PCとSPで表示を変えるために追加 */
+
+/* デフォルトではすべて非表示にする */
+.pc-section, .mobile-section {
+  display: none;
+}
+
+/* PC用セクションを表示するスタイル */
+@media screen and (min-width: 1024px) {
+  .pc-section {
+    display: block;
+  }
+}
+
+/* モバイル用セクションを表示するスタイル */
+@media screen and (max-width: 767px) {
+  .mobile-section {
+    display: block;
+  }
+}
